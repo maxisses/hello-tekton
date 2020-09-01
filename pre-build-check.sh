@@ -41,8 +41,8 @@ dockerlint -f ${DOCKER_ROOT}/${DOCKER_FILE}
 
 echo "=========================================================="
 echo "Checking registry current plan and quota"
-bx cr plan
-bx cr quota
+#bx cr plan
+#bx cr quota
 echo "If needed, discard older images using: bx cr image-rm"
 echo "Checking registry namespace: ${REGISTRY_NAMESPACE}"
 NS=$( bx cr namespaces | grep ${REGISTRY_NAMESPACE} ||: )
